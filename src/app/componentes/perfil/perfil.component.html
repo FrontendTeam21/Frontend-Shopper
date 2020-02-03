@@ -1,0 +1,94 @@
+<!-- Esta página hay que trabajarla bastante. Para poder entenderlo primero tenéis que tenerla abierta. Primero una vista que recoja los datos del usuario que quiera comprar y unos de botones, uno para modificar la información y otro para añadir otra dirreción, únicamente. Estos botones podrían abrir un modal bien chingón que tenga un formulario para actualizar los datos del usuario y un botoncito para guardarlos, obviamente.
+
+Ojo!!!!! Hay que crear un modelo de usuario que sirva para el login y para esta parte. Tiene que recoger los datos que se metan en el login y los pinte aquí. Ya hay un modelo de usuario de usuario en backend. En principio trabajamos con nuestro backend y ya nos darán otras cosas-->
+
+
+<app-breadcrumb></app-breadcrumb>
+<h2>Mi Cuenta</h2>
+<div class="contenedor-perfil">
+
+    <div class="column">
+        <div class="column-datos">
+            <h4>Mi Cuenta</h4>
+            <a routerLink="/perfil">Mis datos</a>
+            <a href="">Mensajes</a>
+            <a href="">Opiniones</a>
+            <a routerLink="/carrito">Carrito</a>
+        </div>
+        <div class="column-datos">
+            <h4>Mis Pedidos</h4>
+            <a href="">Pedidos y facturas</a>
+            <a routerLink="/faqs">Devoluciones y garantías</a>
+        </div>
+        <div class="column-datos">
+            <h4>¿Necesitas ayuda?</h4>
+            <a routerLink="/contacto">Contácto</a>
+            <a routerLink="/faqs">FAQs</a>
+            <a routerLink="/">Cerrar sesión</a>
+        </div>
+        <div class="column-datos">
+            <h4>Administración</h4>
+            <button routerLink="/crear-producto">Subir Producto</button>
+            <button routerLink="/crear-producto">Modificar Producto</button>
+            <button routerLink="/crear-producto">Gestión de datos</button>
+        </div>
+    </div>
+
+    <div class="info-user">
+        <h3>Datos de mi cuenta</h3>
+        <hr>
+        <div class="cambio">
+            <p>Roberto_Martinez</p>
+            <div>
+                <label for="newName">Nuevo Nombre</label>
+                <input type="text" id="newName">
+                <button>Cambiar</button>
+            </div>
+        </div>
+        <div class="cambio">
+            <label for="oldPass">Antigua Contraseña</label>
+            <input type="text" id="oldPass">
+            <label for="newPass">Nueva Contraseña</label>
+            <input type="text" id="newPass">
+            <button>Cambiar</button>
+        </div>
+        <div class="cambio-direccion">
+            <p>Dirección</p>
+            <h5>Nombre dirección</h5>
+            <p>Avenida de la Paz, nº54 1ºC, 12345</p>
+            <div class="column-direcc">
+                <div class="mod-direcc">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion">
+                
+                
+                    <label for="pais">País</label>
+                    <input type="text" id="pais">
+                
+                
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="provincia">
+                </div>
+                <div class="mod-direcc">
+                    <label for="poblacion">Población</label>
+                    <input type="text" id="poblacion">
+                
+                
+                    <label for="cp">Código Postal</label>
+                    <input type="text" id="cp">
+                
+                
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono">
+                </div>
+            </div>
+            <div class="botones-direc">
+                <button>Modificar</button>
+                <button>Borrar</button>
+                <button>Añadir dirección</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

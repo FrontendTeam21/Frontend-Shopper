@@ -1,0 +1,65 @@
+/* El primer boton es que sirve para todos los botones de la página, cuando necesitemos modificar un boton concreto deberemos hacerlo en scss del componente, no aquí */
+
+button {
+    
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 0.5em;
+    font-size: 1em;
+    margin: 1em 0.5em 0 0;
+
+    &:hover {
+        background-color: black;
+    }
+
+    &.boton-filtro {
+        @include flex-row(space-between, center);
+        background-color: rgb(245, 245, 245);
+        
+        
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+
+    &.outline {
+        background-color: white;
+        color: $main-color-darker;
+        border: 1px solid $main-color-darker;
+        border-bottom: 3px solid $main-color-darker;
+    }
+
+    &.outline:hover {
+        background-color: $main-color-darker;
+        color: white;
+    }
+
+    &.warning {
+        background-color: $warning;
+        border-bottom: 3px solid $warning-darker;
+    }
+
+    &.warning:hover {
+        background-color: $warning-darker;
+    }
+
+    &.danger {
+        background-color: $danger;
+        border-bottom: 3px solid $danger-darker;
+    }
+
+    &.danger:hover {
+        background-color: $danger-darker;
+    }
+
+    &.info {
+        background-color: $info;
+        border-bottom: 3px solid $info-darker;
+    }
+
+    &.info:hover {
+        background-color: $info-darker;
+    }
+}

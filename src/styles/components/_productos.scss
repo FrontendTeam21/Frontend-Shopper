@@ -1,0 +1,184 @@
+//inicio
+
+.contenedor {
+    max-width: 70em;
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+
+
+    .producto {
+        max-width: 100%;
+        margin: 0 auto 2em;
+        position: relative;
+        width: 200px;
+        height: 430px;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: -0.5px 0px 20px 2px rgb(236, 236, 236);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 0.5em 0 0.5em 0.5em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: contain;
+            height: 300px;
+        }
+        .botones {
+            @include flex-row(space-between, center);
+            button {
+
+                &.boton-cart {
+                    background-color: rgb(31, 31, 31);
+                    color: white;
+                    font-size: 0.8em;
+                    margin-top: 1em;
+                    width: 100%;
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+                img {
+                    width: 25px;
+                    height: 22px; 
+                }
+            }
+        }
+    }
+}
+
+
+//productos
+.contenedor-productos {
+
+    max-width: 70em;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    .hero-productos {
+        background-image: url(../assets/fashion-1031469_1920.jpg);
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 70em;
+        width: 100vw;
+        height: 400px;
+        margin-bottom: 1em;
+        @include flex-row(center, center);
+
+        .titulo {
+
+            @include flex-column(center, center);
+        }
+        p {
+            font-size: 2em;
+            color: white;
+        }
+
+    }
+
+    .filtros {
+        @include flex-row(flex-start, center);
+        flex-wrap: wrap;
+    }
+
+    .contenedor {
+        max-width: 60em;
+        margin: 0 auto;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em;
+    }
+
+    /* .producto {
+        max-width: 100%;
+        margin: 0 auto 2em;
+        position: relative;
+        width: 200px;
+        height: 430px;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: -0.5px 0px 20px 2px rgb(236, 236, 236);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 0.5em 0 0.5em 0.5em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: contain;
+            height: 300px;
+        }
+        .botones {
+            @include flex-row(space-between, center);
+            button {
+
+                &.boton-cart {
+                    background-color: rgb(31, 31, 31);
+                    color: white;
+                    font-size: 0.8em;
+                    margin-top: 1em;
+                    width: 100%;
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+                img {
+                    width: 25px;
+                    height: 22px; 
+                }
+            }
+        }
+    } */
+}
+
+.paginacion {
+
+    max-width: 60em;
+    width: 100%;
+    margin: 3em auto;
+    @include flex-row(center, center);
+
+    .botones-pag {
+        @include flex-row(center, center);
+
+        .pag {
+
+            background-color: white;
+            &:hover {
+                color: #ff6a6a;
+                font-weight: 600;
+            }
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(245, 245, 245);
+            }
+        }
+    }
+}

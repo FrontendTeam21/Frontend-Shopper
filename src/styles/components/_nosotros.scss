@@ -1,0 +1,168 @@
+.contenedor {
+    width: 100vW;
+    max-width: 70em;;
+    margin: 2em auto;
+
+    .principal {
+        width: 70em;
+        height: 400px;
+        margin: 4em auto;
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: bottom;
+            width: 100vw;
+            height: 400px;
+            margin-bottom: 10em;
+        }
+        
+    }
+    .story {
+        @include flex-row(space-between, center);
+        width: 70em;
+        height: 30em;
+        max-height: 30em;
+        margin: 4em auto;
+        position: relative;
+    
+       
+        .imagen{
+            width: 50%;
+            border-radius: 0.5em ;
+            
+            .img1{
+                height: 250px;
+                max-width: 25em;
+                position: relative;
+                top: -100px;
+                left: 180px;
+                z-index: 1;
+            } 
+            .img2{
+                margin: 7em 0 0 -12em;
+                position: absolute;
+                top: 50px;
+                left: 190px;
+                height: 250px;
+                max-width: 25em;
+                z-index: 1;
+            }
+        }
+    }
+    .ourStory{
+        @include flex-column(space-between, center);
+        width: 50%;
+        padding: 5em;
+
+        h3{
+            width: 100%;
+            text-align: left;
+            font-size: 2em;
+            padding: 0em 0 1em 0 ;
+        }
+        p{
+          
+            font-size: 1.2em;
+        }
+    }
+    .whoWeAre{
+        @include flex-row(space-between, center);
+        width: 70em;
+        height: 30em;
+        max-height: 30em;
+        margin: 4em auto;
+        position: relative;
+
+
+        .imagen{
+            width: 50%;
+            border-radius: 0.5em ;
+            
+            .img1{
+                height: 250px;
+                max-width: 25em;
+                position: relative;
+                top: -100px;
+                left: 80px;
+                z-index: 1;
+            } 
+            
+            .img2{
+                margin: 7em 0 0 -12em;
+                position: relative;
+                top: 50px;
+                left: 80px;
+                height: 250px;
+                max-width: 25em;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/*
+/*Imagenes carrusel*/
+
+/* .imagenes{
+    width: 70em;
+    height: 30em;
+    max-height: 30em;
+    margin: 4em auto 2em auto;
+}
+
+  .imagenes img{
+    width:100%;
+    height:20em;
+  }
+
+  .goPrincipal{
+    width: 70em;
+    height: 20em;
+    max-height: 30em;
+    margin: 4em auto;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBTck1KIet7a8PPHN4iL5_nOpspss_4lFpbM1t5q8f1FiiMu-l");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .goPrincipal .marco {
+    width: 35em;
+    height: 6em;
+    max-height: 30em;
+    background:rgba(58, 56, 56, 0.473);
+    margin-top: 6em;
+    left: 30em;
+    position: absolute;
+    border-radius: 1em;
+  }
+
+  .goPrincipal .marco:hover {
+    width: 35em;
+    height: 6em;
+    max-height: 30em;
+    background:rgb(143, 140, 140);
+    margin-top: 6em;
+    left: 30em;
+    position: absolute;
+    border-radius: 1em;
+    transition: 500ms;
+  }
+
+
+
+  .goPrincipal h2{
+    padding-top: 0.8em;
+    color: black;
+  }
+ */

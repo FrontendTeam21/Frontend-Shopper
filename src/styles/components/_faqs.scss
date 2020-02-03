@@ -1,0 +1,15 @@
+.preguntas {
+    padding: 2em;
+
+    button {
+        background-color: rgb(31, 31, 31);
+        color: white;
+        font-size: 0.8em;
+        margin-top: 1em;
+
+        &:hover {
+            background-color: black;
+        }
+        
+    }
+}

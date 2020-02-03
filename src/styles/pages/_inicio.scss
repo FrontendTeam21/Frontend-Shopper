@@ -1,0 +1,161 @@
+/* Igual que el ayauto, este es un poco caja de herramientas que despues he ido cambiando en cada componente que lo necesitaba,
+ pero en principio aquí estan las cosas que vemos en la página de inicio. Yo, me encargo de ella */
+
+
+header {
+    @include flex-row(space-between, center);
+    width: 70em;
+    margin: 0 auto;
+    display: flex;
+    
+    &.hero.inicio {
+        background-image: url(../assets/fashion-1031469_1920.jpg);
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        @include flex-column(center, center);
+
+        p {
+            font-size: 2em;
+            color: white;
+        }
+
+        &.titulo {
+
+            @include flex-column(center, center);
+        }
+    }
+
+}
+
+
+.cont-ult-prod {
+    width: 100vw;
+    margin-bottom: 5em;
+    padding-top: 2em;
+}
+
+.cont-cat {
+    background-color: rgb(245, 245, 245);
+    padding: 2em 2em 5em 2em;
+    width: 100vw;
+}
+
+.contenedor-categoria{
+
+    max-width: 70em;
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    .producto-categoria{
+
+        max-width: 95%;
+        margin: 0 auto 2em;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        @include flex-column(flex-end, center);
+
+        
+
+        img {
+
+            height: 300px;
+            margin: 0 auto;
+
+            &:hover {
+                filter: grayscale(70%);
+                transition: all 600ms ease-in-out;
+            }
+        }
+
+        button {
+            position: absolute;
+
+            &.boton {
+                @include flex-row(space-between, center);
+                height: 50px;
+        
+                .arrow-right {
+                    height: 21px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.contenedor-our {
+    width: 100vW;
+    max-width: 70em;;
+    margin: 2em auto;
+    background-color: $main-color;
+
+
+    .story {
+        @include flex-row(space-between, center);
+        width: 70em;
+        height: 30em;
+        max-height: 30em;
+        margin: 4em auto;
+        position: relative;
+    
+       
+        .imagen{
+            width: 50%;
+            border-radius: 0.5em ;
+            
+            .img1{
+                height: 250px;
+                max-width: 25em;
+                position: relative;
+                top: -100px;
+                left: 180px;
+                z-index: 1;
+            } 
+            .img2{
+                margin: 7em 0 0 -12em;
+                position: absolute;
+                top: 50px;
+                left: 190px;
+                height: 250px;
+                max-width: 25em;
+                z-index: 1;
+            }
+        }
+    }
+    .ourStory{
+        @include flex-column(space-between, center);
+        width: 50%;
+        padding: 5em;
+
+        h3{
+            width: 100%;
+            text-align: left;
+            font-size: 2em;
+            padding: 0em 0 1em 0 ;
+        }
+        p{
+          
+            font-size: 1.2em;
+        }
+        .boton-cart {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            font-size: 0.8em;
+            margin-top: 1em;
+            width: 100%;
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}

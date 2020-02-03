@@ -1,0 +1,68 @@
+
+<!-- Cambiar los estilos. Ahora mismo está enrutado desde el footer pero estaría bien que tuviese un acceso directo desde el nav.
+Y añadir la lógica para recoger los datos del formulario y mandarlos a la base de datos (igual que guardamos los datos de un login, no tiene más) -->
+
+<app-breadcrumb></app-breadcrumb>
+
+<h2>Contáctanos</h2>
+<div class="contenedor-perfil">
+    <div class="column">
+        <div class="column-datos">
+            <h4>Llámanos</h4>
+            <p>Disponibles de 9:00 a 17:00</p>
+            <p>De lunes a viernes</p>
+            <h5>Atención al Cliente</h5>
+            <p>111222333</p>
+        </div>
+        <div class="column-datos">
+            <h4>Escríbenos</h4>
+            <p>Rellena nuestro formulario y ponte en contácto con nosotros</p>
+            <h5>Atención al Cliente</h5>
+            <p>contacto@contacto.com</p>
+            <h5>Empleo</h5>
+            <p>empleo@empleo.com</p>
+        </div>
+        <div class="column-datos">
+            <h4>¿Necesitas ayuda?</h4>
+            <a routerLink="/contacto">Contácto</a>
+            <a routerLink="/faqs">FAQs</a>
+            <a routerLink="/">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <div class="info-user">
+        <div class="card w-60">
+            <form [formGroup]="formProducto" (ngSubmit)="sendProducto()">
+                <div class="col-33">
+                    <div class="col-100 pila">
+                        <input class="inicio" type="text" id="imagePath" formControlName="imagePath" placeholder="Nombre" required #imagePath>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="col-100 pila">
+                        <input class="inicio" type="text" id="title" formControlName="title" placeholder="Email" required #title>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="col-100 pila">
+                        <textarea name="pregunta" id="pregunta" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="col-33">
+                    
+                    <button class="m-l-small" type="submit">Enviar</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+    
+
+
+
+

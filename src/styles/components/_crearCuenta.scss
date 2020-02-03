@@ -1,0 +1,58 @@
+.contenedor-crear-cuenta {
+    width: 30em;
+    @include flex-row(space-between, flex-start);
+    margin: 0 auto;
+    background-color: $main-color;
+    padding: 1em;
+
+
+    .cont-check {
+        @include flex-column(flex-start,center);
+
+
+        .checkbox {
+            width: 100%;
+            @include flex-row(flex-start,center);
+            margin: 1em auto;
+
+
+            input {
+                width: 5%;
+                margin: 0.5em 0.5em 0.5em 0;
+            }
+
+            p {
+                font-size: 12px;
+
+                a {
+                    cursor: pointer;
+                    color: black;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: #ff6a6a;
+                    }
+                }
+            }
+        }
+    }
+
+    input {
+        padding: 1em;
+        margin: 1em auto;
+        border: 0.5px solid rgb(212, 212, 212);
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        background-color: rgb(31, 31, 31);
+        color: white;
+        font-size: 1em;
+        margin-top: 1em;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+}

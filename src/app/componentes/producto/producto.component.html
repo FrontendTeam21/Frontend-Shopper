@@ -1,0 +1,117 @@
+
+<!-- Cambiar un poco los estilos. Añadir hover a las imágenes para que cuando se pase el ratón se abra en el lugar donde está la principal, además añadir un modal para cuando se pinche en las imágenes y que tenga un carrusel.
+Hay que darle un vuelta a la información del producto que queremos que se muestre y ver un poco los botones de tallas y demás. Necesita trabajillo. Además hay que meter un carrusel en la parte de productos relacionados.
+
+Tenemos el mismo problema que antes con el perfil y el login. Tenemos nuestro modelo de producto en el backend pero nos lo van a cambiar. Trabajemos con lo nuestro y listo. -->
+
+<app-breadcrumb></app-breadcrumb>
+<div class="contenedor-producto">
+    <div class="contenedor-producto-imagenes">
+
+        <div class="imagen-principal">
+            <img src="assets/sneakers-531172_1920.jpg" alt="">
+        </div>
+        <div class="imagen-secundaria">
+            <img src="assets/sneakers-531172_1920.jpg" alt="">
+            <img src="assets/sneakers-531172_1920.jpg" alt="">
+            <img src="assets/sneakers-531172_1920.jpg" alt="">
+        </div>
+        <hr>
+    </div>
+    
+    <div class="producto-info">
+        <div class="titulo-producto">
+            <p>Sneakers</p>
+            <h4>Zapatillas Sneakers</h4>
+            <p class="precio">25€</p>
+        </div>
+        <div class="color-producto">
+            <p>Color: <span>Azul</span></p>
+            <div class="imagen-color">
+                <img src="assets/sneakers-531172_1920.jpg" alt="">
+                <img src="assets/sneakers-531172_1920.jpg" alt="">
+            </div>
+        </div>
+        <div class="talla-producto">
+            <p>Tamaño</p>
+            <select id="size">
+                <option value="1">36 EU</option>
+                <option value="2">37 EU</option>
+                <option value="3">38 EU</option>
+                <option value="4">39 EU</option>
+                <option value="5">40 EU</option>
+                <option value="6">41 EU</option>
+                <option value="7">42 EU</option>
+                <option value="8">43 EU</option>
+                <option value="9">44 EU</option>
+                <option value="10">45 EU</option>
+            </select>
+        </div>
+        <div class="cantidad-add">
+            <div class="cantidad">
+                <p>Cantidad</p>
+                <select id="cantidad">
+                    <option value="11">1</option>
+                    <option value="12">2</option>
+                    <option value="13">3</option>
+                    <option value="14">4</option>
+                    <option value="15">5</option>
+                </select>
+            </div>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+
+<div class="contenedor">
+    <h3>Información del producto</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel aspernatur reprehenderit distinctio. Atque, et omnis. Eveniet praesentium officia numquam laborum ab labore modi eius sed eaque, quasi architecto fugiat amet odit tempora, eum at ullam odio aliquid, et vel incidunt hic? Quas aliquam a iusto, blanditiis ipsam libero? At.
+    </p>
+</div>
+
+<div class="cont-ult-prod">
+    <h2>Productos relacionados</h2>
+    <div class="contenedor">
+        
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <h3>Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <h3>Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <h3>Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <h3>Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

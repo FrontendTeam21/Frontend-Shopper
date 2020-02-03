@@ -1,0 +1,37 @@
+
+<!-- Hasta que no veamos como quieren guardar los productos en el backend no podemos hacer nada más con la lógica, funcionar funciona perfectamente, pero para nuestro Mongo, no para su backend.
+Solo habría que cambiar los estilos y añadir la opción de guardar las imágenes buscando en la ruta de ordenador. Creo que tenemos una hecha así en la practica que teníamos con Pedro para cambiar la imagen de perfil. 
+Además tenemos que dar la opción de guardar varias imágenes para poder pintarlas después en la información del producto-->
+
+<app-breadcrumb></app-breadcrumb>
+<h2>Nuevo producto</h2>
+<div class="cont-cat">
+    <div class="contenedor-crear-cuenta">
+        <div class="contenedor-form">
+            <form [formGroup]="formProducto" class="crearCuentaForm" (ngSubmit)="sendProducto()">
+                <input type="text" id="imagePath" formControlName="imagePath" placeholder="Ruta Imágen">                
+                <input type="text" id="nombre" formControlName="nombre" placeholder="Nombre">                
+                <h4>Categorías</h4>
+                <input type="text" id="categoriaGenero" formControlName="categoriaGenero"  placeholder="Género">
+                     
+                <input type="text" id="categoriaProducto" formControlName="categoriaProducto"  placeholder="Tipo de producto">
+                     
+                <input type="text" id="categoriaMarca" formControlName="categoriaMarca"  placeholder="Marca">
+                    
+                <input type="text" id="categoriaColor" formControlName="categoriaColor"  placeholder="Color">
+                   
+                <input type="text" id="categoriaTalla" formControlName="categoriaTalla"  placeholder="Talla">
+                     
+                <input type="text" id="precio" formControlName="precio" placeholder="Precio">
+
+                <input type="text" id="descripcion" formControlName="descripcion" placeholder="Descripción">
+
+                <div class="col-100 botones">
+                    <button class="outline" routerLink="/perfil" type="button">Cancelar</button>
+                    <button class="m-l-small" type="submit">Añadir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,109 @@
+/* Esto es una caja de herramientas que hicimos con Pedro, he cogido algunos (container, fila...) pero los he modificado en el scss del componenete en el que los haya utilizado. 
+Pero bueno, los tenemos aqui para utilizarlos si los necesitamos*/
+
+
+.container {
+    @include flex-row(space-between, center);
+    background-color: white;
+    padding: 1em;
+}
+
+.card {
+    width: calc(100% - 2em);
+    border-radius: 0.5em;
+    background-color: white;
+    margin: 0.5em 1em 1em;
+    padding: 1em;
+
+    &.w-60 {
+        width: 100%;
+        margin: 0.5em auto 1em;
+    }
+
+    img {
+        
+        width: 200px;
+        height: 200px;
+    }
+
+    @include flex-column(center,center);
+        height: auto;
+        padding: 1em;
+}
+
+.fila {
+    width: 70em;
+    margin: 0 auto;
+    @include flex-row(flex-start, center);
+    
+
+    &.end {
+        @include flex-row(flex-end, center);
+    }
+
+    &.inicio {
+        @include flex-row(flex-start, flex-start);
+    }
+}
+
+.fila-2 {
+    width: 70em;
+    margin: 0 auto;
+    @include flex-row(space-between, center);
+    
+
+    &.end {
+        @include flex-row(flex-end, center);
+    }
+
+    &.inicio {
+        @include flex-row(flex-start, flex-start);
+    }
+}
+
+.col-100 {
+    width: 100%;
+    padding: 0.5em;
+    @include flex-row(flex-start, center);
+    position: relative;
+
+    &.titulo {
+        @include flex-row(space-between, center);
+    }
+
+    &.centrado {
+        @include flex-row(center, center);
+    }
+
+    &.pila {
+        @include flex-column (flex-start, flex-start);
+        width: 700px;
+    }
+
+    &.botones {
+        @include flex-row(flex-end, center);
+    }
+}
+
+.col-66 {
+    width: 66.6666666%;
+    padding: 0.5em;
+    @include flex-row(flex-start, center);
+    
+    &.pila {
+        @include flex-column (flex-start, flex-start);
+    }
+}
+
+.col-50 {
+    width: 50%;
+    padding: 0.5em;
+    @include flex-row(flex-start, center);
+    
+    &.pila {
+        @include flex-column (flex-start, flex-start);
+    }
+}
+
+
+

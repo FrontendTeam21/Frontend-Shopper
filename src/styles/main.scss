@@ -1,0 +1,63 @@
+/* El scss principal, nop creo que necesita mucha presentación */
+
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/badges';
+@import 'components/breadcrumb';
+@import 'components/buttons';
+@import 'components/carrito';
+@import 'components/crearCuenta';
+@import 'components/contacto';
+@import 'components/faqs';
+@import 'components/footer';
+@import 'components/forms';
+@import 'components/modals';
+@import 'components/nav';
+@import 'components/nosotros';
+@import 'components/perfil';
+@import 'components/productos';
+@import 'components/producto';
+@import 'components/spinners';
+@import 'components/tables';
+
+@import 'layout/layout';
+
+@import 'pages/inicio';
+@import 'pages/preview';
+
+
+
+
+body {
+    font-family: $main-font;
+    color: $color-font;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: $title-font;
+    font-size: 4em;
+    color: white;
+}
+
+h2 {
+    @include flex-row(center, center);
+    font-size: 35px;
+    margin: 50px auto;
+    color: black;
+}
+
+.m-l-small {
+    margin-left: 0.5em;
+}
+
+.m-r-small {
+    margin-right: 0.5em;
+}

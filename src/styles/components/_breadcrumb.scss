@@ -1,0 +1,14 @@
+.breadcrumb {
+    font-size: 0.9em;
+    padding-bottom: 1em;
+
+    span {
+        cursor: pointer;
+        color: rgb(149, 149, 149);
+    }
+
+    span.activo {
+        cursor: initial;
+        color: rgb(149, 149, 149);
+    }
+}

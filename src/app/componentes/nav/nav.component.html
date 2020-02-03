@@ -1,0 +1,115 @@
+
+<!-- Cambiar un poco el estilo. Yo me encargo -->
+
+<nav #nav>
+    <header>
+        <a href="/">
+            <img src="assets/shopping-cart-371981_1280.png" alt="Logotipo de Shopper">
+        </a>
+
+        <ul id="navegacion">
+            <a class="m-r-small">
+                <form class="buscador" [formGroup]="formSearch">
+                    <label (click)="showSearch()">
+                        <img src="assets/icons/search.svg">
+                    </label>
+                    <input type="search" 
+                        placeholder="Buscar producto..." 
+                        #search
+                        formControlName="search">
+                </form>
+            </a>
+            
+            <a class="m-r-small" routerLink="/">
+                <img src="assets/icons/home-red.svg" alt="">
+            </a>
+            <a class="m-r-small">
+                <img src="assets/icons/user.svg" alt="">
+                <ul>
+                    <li><a routerLink="/perfil">Perfil</a></li>
+                    <li>LogIn</li>
+                    <li><input type="text" placeholder="Usuario"></li>
+                    <li><input type="text" placeholder="Email"></li>
+                    <li><button>Entrar</button></li>
+                    <li routerLink="/crear-cuenta"><a>Crear cuenta</a></li>
+                </ul>
+            </a>
+            <a class="m-r-small" routerLink="/productos">
+                <img src="assets/icons/shopping-bag.svg" alt="">
+            </a>
+            <a class="m-r-small" routerLink="/carrito">
+                <img src="assets/icons/shopping-cart.svg" alt="">
+                <div class="numero-productos" routerLink="/carrito">
+                    <p>3</p>
+                </div>
+            </a>
+        </ul>      
+        <div class="mensaje" 
+             *ngIf="texto.length > 0 && showMensaje"
+             [ngClass]="{
+                            'success': tipoMensaje === 'exitoTotal',
+                            'warning': tipoMensaje === 'warning',
+                            'danger': tipoMensaje === 'error'
+                        }">
+            {{texto}}
+        </div>
+    </header>
+</nav>
+<hr>
+<div class="container">
+    <ul class="fila">
+        <li>Categoria
+            <ul>
+                <li><a href="">Pantalones</a></li>
+                <li><a href="">Camisetas y camisas</a></li>
+                <li><a href="">Jerseys y sudaderas</a></li>
+                <li><a href="">Chaquetas</a></li>
+                <li><a href="">Zapatos y zapatillas</a></li>
+                <li><a href="">Accesorios</a></li>
+            </ul>
+        </li>
+        <li>Marca
+            <ul>
+                <li><a href="">Zara</a></li>
+                <li><a href="">Stradivarius</a></li>
+                <li><a href="">Mango</a></li>
+                <li><a href="">H&M</a></li>
+                <li><a href="">Bershka</a></li>
+                <li><a href="">Massimo Dutti</a></li>
+            </ul>
+        </li>
+        <li>Color
+            <ul>
+                <li><a href="">Negro</a></li>
+                <li><a href="">Blanco</a></li>
+                <li><a href="">Gris</a></li>
+                <li><a href="">Rojo</a></li>
+                <li><a href="">Verde</a></li>
+                <li><a href="">Azul</a></li>
+                <li><a href="">Amarillo</a></li>
+                <li><a href="">Marrón</a></li>
+            </ul>
+        </li>
+        <li>Tallas
+            <ul>
+                <li><a href="">3XS</a></li>
+                <li><a href="">2XS</a></li>
+                <li><a href="">XS</a></li>
+                <li><a href="">S</a></li>
+                <li><a href="">M</a></li>
+                <li><a href="">L</a></li>
+                <li><a href="">XL</a></li>
+                <li><a href="">2XL</a></li>
+                <li><a href="">3XL</a></li>
+            </ul>
+        </li>
+        <li>Precio
+            <ul>
+                <li><a href="">0€ - 50€</a></li>
+                <li><a href="">50€ - 100€</a></li>
+                <li><a href="">100€ - 150€</a></li>
+                <li><a href="">150€ - 200€</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

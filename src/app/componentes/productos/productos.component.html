@@ -1,0 +1,184 @@
+<!-- Aquí hay que añadir la opción de seleccionar los filtros en el lateral y ponerle su lógica para que busque cuando se seleccione. Además hay que pintar los filtros selecionados (esto vendrá de las categoriás del producto que tengamos. Lo mismo, trabajamos con nuestro backend y ya se cambiará). También hay que añadirle la lógica de la paginación.
+
+Si queréis yo me encargo de esta parte que la conozco y es un poco más jodida-->
+
+<div class="contenedor-productos">
+
+    <header class="hero-productos">
+        <div class="titulo">
+            <h1>Shopping</h1>
+            <p>Best way to shop</p>
+        </div>
+    </header>
+
+    <div class="filtros"> <!-- Aquí se pintan los filtros -->
+        <app-breadcrumb></app-breadcrumb>
+        <button class="boton-filtro m-r-small">Camisetas
+            <img class="m-l-small" src="assets/icons/x.svg" alt="">
+        </button>
+        <button class="boton-filtro m-r-small">Azul
+            <img class="m-l-small" src="assets/icons/x.svg" alt="">
+        </button>
+        <button class="boton-filtro m-r-small">0€ - 50€
+            <img class="m-l-small" src="assets/icons/x.svg" alt="">
+        </button>
+        <button class="boton-filtro m-r-small">Hombre
+            <img class="m-l-small" src="assets/icons/x.svg" alt="">
+        </button>
+    </div>
+    
+
+    <app-spinner *ngIf="showSpinner"></app-spinner>
+    <p class="sin-resultados" *ngIf="productos?.length === 0">No se encontraron resultados</p>
+
+    <div class="contenedor">
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto" routerLink="/producto">
+            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="contenido-anuncio">
+                <p class="m-l-small">Camisetas</p>
+                <h3 class="m-l-small">Camiseta Adidas</h3>
+                <p class="m-l-small">20€</p>
+                <div class="botones">
+                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="paginacion">
+    <div class="botones-pag">
+        <img src="../../../assets/icons/chevron-left.svg" alt="">
+        <button class="pag">1</button>
+        <button class="pag">2</button>
+        <button class="pag">3</button>
+        <button class="pag">4</button>
+        <button class="pag">5</button>
+        <button class="pag">6</button>
+        <img src="../../../assets/icons/chevron-right.svg" alt="">
+        
+    </div>
+</div>
+
+

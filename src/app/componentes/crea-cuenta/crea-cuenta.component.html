@@ -1,0 +1,28 @@
+<!-- Cambiar estilos y los datos que queremos que se metan en la cuenta. Solo habría que añadir el nombre y el apellido y quitar el nombre de usuario. 
+Y añadir la lógica para recoger los datos del formulario y mandarlos a la base de datos (lo tenemos hecho con Pedro y tambien en el componente de crear productos hay un ejemplo) -->
+
+<app-breadcrumb></app-breadcrumb>
+<h2>Crear cuenta</h2>
+<div class="cont-cat">
+    <div class="contenedor-crear-cuenta">
+        <div class="contenedor-form">
+            <form [formGroup]="crearCuentaForm" class="crearCuentaForm">
+                <input type="text" placeholder="Nombre de usuario">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Contraseña">
+                <input type="text" placeholder="Repetir contraseña">
+                <div class="cont-check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <p>He leído y acepto la <a routerLink="/politica">política de privacidad.</a></p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <p>Quiero recibir descuentos exclusivos, novedades y tendencias por e-mail. <br> Puedo darme de baja cuando quiera.</p>
+                    </div>
+                </div>
+                <button>Crear cuenta</button>
+            </form>
+        </div>
+    </div>
+</div>

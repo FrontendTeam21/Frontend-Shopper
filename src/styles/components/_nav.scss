@@ -1,0 +1,146 @@
+nav {
+    background: white;
+    padding: 1.5em 0 1.5em 0;
+    height: 100px;
+    display: flex;
+    width: 100vw;
+
+    header {
+        @include flex-row(space-between, center);
+        
+
+        img {
+            width: 100px;
+            height: 80px;
+        }
+
+        ul { 
+            @include flex-row(space-between, center);
+            position: relative;
+
+
+            form {
+                
+                label {
+                    margin-bottom: 0;
+                }
+            }
+            
+            a{
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .numero-productos {
+                    width: 15px;
+                    height: 15px;
+                    background-color: #ff6a6a;
+                    position: absolute;
+                    border-radius: 30px;
+                    top: 5px;
+                    left: 150px;
+
+                    p {
+                        color: $main-color;
+                        font-size: 11px;
+                        margin: 0 auto;
+                        width: 5px;
+                        padding: 0.1em 0.1em 0 0;
+                    }
+                }
+            }
+        }
+
+        a {
+
+            &:hover > ul {
+                display: block;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                background-color: rgb(245, 245, 245);
+                min-width: 220px;
+                min-height: auto;
+                padding: 1em 0.5em 1em 1em;
+                z-index: 100;
+
+                li {
+                    padding: 0.5em 0 0.5em 0;
+                    list-style: none;
+
+                    a {
+                        color: rgb(61, 61, 61);
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #ff6a6a;
+                        }
+                    }
+
+                    input {
+                        padding: 0.3em;
+                    }
+
+                    button {
+                        background-color: rgb(31, 31, 31);
+                        color: white;
+                        font-size: 1em;
+                        margin-top: 0.5em;
+            
+                        &:hover {
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+
+    .fila {
+
+        li {
+            list-style: none;
+            margin-right: 1em;
+            cursor: pointer;
+            font-size: 18px;
+            color: black;
+    
+            &:hover {
+                color: #ff6a6a;
+            }
+
+            &:hover > ul {
+                display: block;
+            }
+            
+            ul {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 220px;
+                min-height: auto;
+                padding: 1em 0.5em 1em 1em;
+                z-index: 100;
+                
+
+                li {
+                    padding: 0.5em 0 0.5em 0;
+
+                    a {
+                        color: rgb(61, 61, 61);
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #ff6a6a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

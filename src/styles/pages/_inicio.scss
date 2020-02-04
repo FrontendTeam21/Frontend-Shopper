@@ -1,42 +1,97 @@
-/* Igual que el ayauto, este es un poco caja de herramientas que despues he ido cambiando en cada componente que lo necesitaba,
+/* Igual que el layout, este es un poco caja de herramientas que despues he ido cambiando en cada componente que lo necesitaba,
  pero en principio aquí estan las cosas que vemos en la página de inicio. Yo, me encargo de ella */
 
-
-header {
-    @include flex-row(space-between, center);
-    width: 70em;
+.contenedor-inicio {
+    max-width: 70em;
     margin: 0 auto;
+    margin-bottom: 5em;
+    width: 100vw;
     display: flex;
-    
-    &.hero.inicio {
-        background-image: url(../assets/fashion-1031469_1920.jpg);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 100vw;
+    flex-wrap: wrap;
+
+ 
+        
+    .hero.inicio {
+        margin: 0.05em auto;
+        width: 100%;
         position: relative;
-        @include flex-column(center, center);
+        height: 700px;
+        overflow: hidden;
+
+        ul {
+            width: 300%;
+            display: flex;
+            padding: 0;
+
+            animation: cambio 20s infinite linear;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+
+            li {
+                width: 100%;
+                list-style: none;
+
+                &.first-img {
+                    img {
+                        object-fit: contain;
+                        height: 700px;
+                        width: 100%;
+                    }
+                }
+
+                img {
+                    object-fit: cover;
+                    height: 700px;
+                    width: 100%;
+                }
+            }
+        }
+
+        @keyframes cambio {
+            0% { margin-left: 0;}
+            30% { margin-left: 0;}
+
+            35% { margin-left: -100%;}
+            65% { margin-left: -100%;}
+
+            70% { margin-left: -200%;}
+            100% { margin-left: -200%;}
+        }
+
+       
 
         p {
             font-size: 2em;
             color: white;
         }
 
-        &.titulo {
-
+        .titulo {
             @include flex-column(center, center);
+
+            h1 {
+                color: black;
+            }
+            p{
+                color: black;
+            }
         }
     }
-
 }
 
 
 .cont-ult-prod {
-    width: 100vw;
+    max-width: 70em;
+    width: 100%;
     margin-bottom: 5em;
     padding-top: 2em;
+    margin: 0 auto;
+
+    h4 {
+        @include flex-row(flex-start, center);
+        width: 100%;
+        margin: 0 auto;
+        color: black;
+    }
 }
 
 .cont-cat {
@@ -49,7 +104,7 @@ header {
 
     max-width: 70em;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 

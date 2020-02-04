@@ -3,9 +3,10 @@ Pero bueno, los tenemos aqui para utilizarlos si los necesitamos*/
 
 
 .container {
-    @include flex-row(space-between, center);
+    @include flex-row(flex-start, center);
     background-color: white;
-    padding: 1em;
+    padding: 0 0 0.5em 0;
+    box-shadow: 1px 1px #cacaca;
 }
 
 .card {
@@ -32,7 +33,9 @@ Pero bueno, los tenemos aqui para utilizarlos si los necesitamos*/
 }
 
 .fila {
-    width: 70em;
+
+    max-width: 70em;
+    width: 100%;
     margin: 0 auto;
     @include flex-row(flex-start, center);
     

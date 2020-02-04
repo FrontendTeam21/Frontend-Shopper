@@ -83,8 +83,8 @@ export class NavComponent implements OnInit {
                       })
   }
 
-  showSearch() {
+  /* showSearch() {
     this.searchRef.nativeElement.classList.add('open');
-  }
+  } */
 
 }

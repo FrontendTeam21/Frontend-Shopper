@@ -2,12 +2,167 @@
 <!-- Cambiar un poco el estilo. Yo me encargo -->
 
 <nav #nav>
-    <header>
-        <a href="/">
-            <img src="assets/shopping-cart-371981_1280.png" alt="Logotipo de Shopper">
+    <div class="contenedor-nav">
+        
+        <a routerLink="/">
+            <img src="assets/icons/CTC PITCH.png" alt="Logotipo de Shopper">
         </a>
 
-        <ul id="navegacion">
+        <span routerLink="/">
+            <img src="assets/icons/monogram-logo-maker-for-a-modern-marketing-company-2227.png" alt="">
+        </span>
+
+        <ul id="navegacion" class="navegacion">
+            
+            <a class="m-r-small" routerLink="/">
+                <img src="assets/icons/home-red.svg" alt="">
+            </a>
+            <a class="m-r-small" routerLink="/perfil">
+                <img src="assets/icons/user.svg" alt="">
+            </a>
+            <a class="m-r-small" routerLink="/contacto">
+                <img src="../../../assets/icons/message-square.svg" alt="">
+            </a>
+            <a class="m-r-small" routerLink="/carrito" class="carrito">
+                <div class="img-carrito">
+                    <img src="assets/icons/shopping-cart.svg" alt="">
+                    <div class="numero-productos" routerLink="/carrito">
+                        <p>3</p>
+                    </div>
+                </div>
+            </a>
+        </ul>      
+        <!-- <div class="mensaje" 
+             *ngIf="texto.length > 0 && showMensaje"
+             [ngClass]="{
+                            'success': tipoMensaje === 'exitoTotal',
+                            'warning': tipoMensaje === 'warning',
+                            'danger': tipoMensaje === 'error'
+                        }">
+            {{texto}}
+        </div> -->
+    </div>
+</nav>
+<hr>
+<div class="container">
+    <ul class="fila">
+        <div class="contenedor-categorias">
+
+            <a routerLink="/productos">Nuevo</a>
+            <a routerLink="/productos">- 5€</a>
+            
+            <li>Mujer
+                <ul>
+                    <div class="contenedor-select">
+                        <div class="cat">
+                            <h4>Ropa</h4>
+                            <li><a href="">Pantalones</a></li>
+                            <li><a href="">Vaqueros</a></li>
+                            <li><a href="">Camisas y blusas</a></li>
+                            <li><a href="">Camisetas y tops</a></li>
+                            <li><a href="">Jerseys y sudaderas</a></li>
+                            <li><a href="">Chaquetas</a></li>
+                            <li><a href="">Abrigos</a></li>
+                            <li><a href="">Vestidos</a></li>
+                            <li><a href="">Faldas</a></li>
+                        </div>
+                        <div class="cat">
+                            <h4>Zapatos</h4>
+                            <li><a href="">Botines</a></li>
+                            <li><a href="">Botas</a></li>
+                            <li><a href="">Zapatillas</a></li>
+                            <li><a href="">Zapatos planos</a></li>
+                            <li><a href="">Zapatos de tacón</a></li>
+                            <li><a href="">Bailarinas</a></li>
+                            <li><a href="">Sandalias</a></li>
+
+                        </div>
+                        <div class="cat">
+                            <h4>Top Marcas</h4>
+                            <li><a href="">Zara</a></li>
+                            <li><a href="">Stradivarius</a></li>
+                            <li><a href="">Mango</a></li>
+                            <li><a href="">H&M</a></li>
+                            <li><a href="">Bershka</a></li>
+                            <li><a href="">Massimo Dutti</a></li>
+                        </div>
+                        <div class="img-hover">
+                            <img src="assets/girl-983969_1920.jpg" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li>Hombre
+                <ul>
+                    <div class="contenedor-select">
+                        <div class="cat">
+                            <h4>Ropa</h4>
+                            <li><a href="">Pantalones</a></li>
+                            <li><a href="">Vaqueros</a></li>
+                            <li><a href="">Camisas y camisetas</a></li>
+                            <li><a href="">Polos</a></li>
+                            <li><a href="">Jerseys y sudaderas</a></li>
+                            <li><a href="">Chaquetas</a></li>
+                            <li><a href="">Abrigos</a></li>
+                            <li><a href="">Cazadoras</a></li>
+                        </div>
+                        <div class="cat">
+                            <h4>Zapatos</h4>
+                            <li><a href="">Botas</a></li>
+                            <li><a href="">Botines</a></li>
+                            <li><a href="">Zapatillas</a></li>
+                            <li><a href="">Mocasines</a></li>
+                            <li><a href="">Náuticos</a></li>
+                            <li><a href="">Zapatos de vestir</a></li>
+                        </div>
+                        <div class="cat">
+                            <h4>Top Marcas</h4>
+                            <li><a href="">Zara</a></li>
+                            <li><a href="">Stradivarius</a></li>
+                            <li><a href="">Mango</a></li>
+                            <li><a href="">H&M</a></li>
+                            <li><a href="">Bershka</a></li>
+                            <li><a href="">Massimo Dutti</a></li>
+                        </div>
+                        <div class="img-hover">
+                            <img src="assets/fashion-1866574_1920.jpg" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li>Complementos
+                <ul>
+                    <div class="contenedor-select">
+                        <div class="cat-comp">
+                            <h4>Categorías</h4>
+                            <li><a href="">Todos los accesorios</a></li>
+                            <li><a href="">Cinturones</a></li>
+                            <li><a href="">Mochilas</a></li>
+                            <li><a href="">Carteras</a></li>
+                            <li><a href="">Bolsos</a></li>
+                            <li><a href="">Bufandas</a></li>
+                            <li><a href="">Guantes</a></li>
+                            <li><a href="">Gafas de sol</a></li>
+                        </div>
+                        
+                        <div class="cat-comp">
+                            <h4>Marcas de accesorios</h4>
+                            <li><a href="">Adolfo Domínguez</a></li>
+                            <li><a href="">Lacoste</a></li>
+                            <li><a href="">Guess</a></li>
+                            <li><a href="">Tommy Hilfiger</a></li>
+                            <li><a href="">Armani</a></li>
+                            <li><a href="">Calvin Klein</a></li>
+                        </div>
+                        <div class="img-hover">
+                            <img src="assets/fashion-2208045_1920.jpg" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <button routerLink="/nosotros" class="vende">Vende tu ropa</button>
+        </div>
+        <div class="buscador">
             <a class="m-r-small">
                 <form class="buscador" [formGroup]="formSearch">
                     <label (click)="showSearch()">
@@ -19,97 +174,6 @@
                         formControlName="search">
                 </form>
             </a>
-            
-            <a class="m-r-small" routerLink="/">
-                <img src="assets/icons/home-red.svg" alt="">
-            </a>
-            <a class="m-r-small">
-                <img src="assets/icons/user.svg" alt="">
-                <ul>
-                    <li><a routerLink="/perfil">Perfil</a></li>
-                    <li>LogIn</li>
-                    <li><input type="text" placeholder="Usuario"></li>
-                    <li><input type="text" placeholder="Email"></li>
-                    <li><button>Entrar</button></li>
-                    <li routerLink="/crear-cuenta"><a>Crear cuenta</a></li>
-                </ul>
-            </a>
-            <a class="m-r-small" routerLink="/productos">
-                <img src="assets/icons/shopping-bag.svg" alt="">
-            </a>
-            <a class="m-r-small" routerLink="/carrito">
-                <img src="assets/icons/shopping-cart.svg" alt="">
-                <div class="numero-productos" routerLink="/carrito">
-                    <p>3</p>
-                </div>
-            </a>
-        </ul>      
-        <div class="mensaje" 
-             *ngIf="texto.length > 0 && showMensaje"
-             [ngClass]="{
-                            'success': tipoMensaje === 'exitoTotal',
-                            'warning': tipoMensaje === 'warning',
-                            'danger': tipoMensaje === 'error'
-                        }">
-            {{texto}}
         </div>
-    </header>
-</nav>
-<hr>
-<div class="container">
-    <ul class="fila">
-        <li>Categoria
-            <ul>
-                <li><a href="">Pantalones</a></li>
-                <li><a href="">Camisetas y camisas</a></li>
-                <li><a href="">Jerseys y sudaderas</a></li>
-                <li><a href="">Chaquetas</a></li>
-                <li><a href="">Zapatos y zapatillas</a></li>
-                <li><a href="">Accesorios</a></li>
-            </ul>
-        </li>
-        <li>Marca
-            <ul>
-                <li><a href="">Zara</a></li>
-                <li><a href="">Stradivarius</a></li>
-                <li><a href="">Mango</a></li>
-                <li><a href="">H&M</a></li>
-                <li><a href="">Bershka</a></li>
-                <li><a href="">Massimo Dutti</a></li>
-            </ul>
-        </li>
-        <li>Color
-            <ul>
-                <li><a href="">Negro</a></li>
-                <li><a href="">Blanco</a></li>
-                <li><a href="">Gris</a></li>
-                <li><a href="">Rojo</a></li>
-                <li><a href="">Verde</a></li>
-                <li><a href="">Azul</a></li>
-                <li><a href="">Amarillo</a></li>
-                <li><a href="">Marrón</a></li>
-            </ul>
-        </li>
-        <li>Tallas
-            <ul>
-                <li><a href="">3XS</a></li>
-                <li><a href="">2XS</a></li>
-                <li><a href="">XS</a></li>
-                <li><a href="">S</a></li>
-                <li><a href="">M</a></li>
-                <li><a href="">L</a></li>
-                <li><a href="">XL</a></li>
-                <li><a href="">2XL</a></li>
-                <li><a href="">3XL</a></li>
-            </ul>
-        </li>
-        <li>Precio
-            <ul>
-                <li><a href="">0€ - 50€</a></li>
-                <li><a href="">50€ - 100€</a></li>
-                <li><a href="">100€ - 150€</a></li>
-                <li><a href="">150€ - 200€</a></li>
-            </ul>
-        </li>
     </ul>
 </div>

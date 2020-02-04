@@ -54,10 +54,12 @@ h2 {
     color: black;
 }
 
+
 .m-l-small {
     margin-left: 0.5em;
 }
 
 .m-r-small {
     margin-right: 0.5em;
+    @include flex-row(space-between, center);
 }

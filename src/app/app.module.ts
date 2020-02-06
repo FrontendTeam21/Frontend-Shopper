@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -44,9 +43,7 @@ import { CreaCuentaComponent } from './componentes/crea-cuenta/crea-cuenta.compo
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    CarouselModule,
-    
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

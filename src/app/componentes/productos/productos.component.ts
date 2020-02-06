@@ -18,5 +18,4 @@ export class ProductosComponent implements OnInit {
   toggleMenu() {
     this.columnRef.nativeElement.classList.toggle('open');
   }
-
 }

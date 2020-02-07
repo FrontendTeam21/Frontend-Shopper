@@ -204,10 +204,12 @@
             .img1{
                 height: 250px;
                 max-width: 25em;
+                width: 25em;
                 position: relative;
                 top: -100px;
                 left: 180px;
                 z-index: 1;
+                object-fit: cover;
             } 
             .img2{
                 margin: 7em 0 0 -12em;
@@ -216,7 +218,9 @@
                 left: 190px;
                 height: 250px;
                 max-width: 25em;
+                width: 25em;
                 z-index: 1;
+                object-fit: contain;
             }
         }
     }
@@ -227,23 +231,24 @@
 
         h3{
             width: 100%;
-            text-align: left;
-            font-size: 2em;
+            text-align: center;
+            font-size: 4em;
+            padding: 0em 0 1em 0 ;
+        }
+        h4 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
             padding: 0em 0 1em 0 ;
         }
         p{
           
             font-size: 1.2em;
         }
-        .boton-cart {
-            background-color: rgb(31, 31, 31);
-            color: white;
-            font-size: 0.8em;
-            margin-top: 1em;
+        button {
             width: 100%;
-
-            &:hover {
-                background-color: black;
+            span {
+                margin: 0 auto;
             }
         }
     }

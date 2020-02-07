@@ -10,19 +10,19 @@ Si queréis yo me encargo de esta parte que la conozco y es un poco más jodida-
             <p>Best way to shop</p>
         </div>
     </header>
+    <app-breadcrumb></app-breadcrumb>
 
     <div class="filtros"> <!-- Aquí se pintan los filtros -->
-        <app-breadcrumb></app-breadcrumb>
-        <button class="boton-filtro m-r-small">Camisetas
+        <button class="m-r-small">Camisetas
             <img class="m-l-small" src="assets/icons/x.svg" alt="">
         </button>
-        <button class="boton-filtro m-r-small">Azul
+        <button class="m-r-small">Azul
             <img class="m-l-small" src="assets/icons/x.svg" alt="">
         </button>
-        <button class="boton-filtro m-r-small">0€ - 50€
+        <button class="m-r-small">0€ - 50€
             <img class="m-l-small" src="assets/icons/x.svg" alt="">
         </button>
-        <button class="boton-filtro m-r-small">Hombre
+        <button class="m-r-small">Hombre
             <img class="m-l-small" src="assets/icons/x.svg" alt="">
         </button>
     </div>
@@ -33,134 +33,254 @@ Si queréis yo me encargo de esta parte que la conozco y es un poco más jodida-
 
     <div class="contenedor">
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/t-shirt-2420558_1920.png" class="first-img-thumbnail">
+                <img src="assets/t-shirt-2423804_1920.png" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Camiseta Adidas</h3>
+                    <p class="m-l-small">20€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/skateboarder-388977_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/adult-1869621_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Pantalones Levi´s</h3>
+                    <p class="m-l-small">60€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/t-shirt-2420558_1920.png" class="first-img-thumbnail">
+                <img src="assets/t-shirt-2423804_1920.png" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Camiseta Adidas</h3>
+                    <p class="m-l-small">20€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/skateboarder-388977_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/adult-1869621_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Pantalones Levi´s</h3>
+                    <p class="m-l-small">60€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/t-shirt-2420558_1920.png" class="first-img-thumbnail">
+                <img src="assets/t-shirt-2423804_1920.png" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Camiseta Adidas</h3>
+                    <p class="m-l-small">20€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/skateboarder-388977_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/adult-1869621_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Pantalones Levi´s</h3>
+                    <p class="m-l-small">60€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="producto" routerLink="/producto">
-            <img src="assets/t-shirt-2420558_1920.png" alt="">
+            <div class="thumbnail-container">
+                <img src="assets/woman-1246571_1920.jpg" class="first-img-thumbnail">
+                <img src="assets/young-woman-1745173_1920.jpg" class="second-img-thumbnail">
+            </div>
             <div class="contenido-anuncio">
-                <p class="m-l-small">Camisetas</p>
-                <h3 class="m-l-small">Camiseta Adidas</h3>
-                <p class="m-l-small">20€</p>
+                <div class="info-prod">
+                    <h3>Vestido Guess</h3>
+                    <p class="m-l-small">90€</p>
+                </div>
                 <div class="botones">
-                    <button class="m-l-small boton-cart m-r-small">Añadir al carrito</button>
+                    <button class="m-l-small m-r-small">Añadir al carrito</button>
+                    <div class="contenedor-corazon">
+                        <a class="add-fav">
+                            <img src="assets/icons/heart.svg" class="m-r-small negro">
+                            <img src="assets/icons/heartred.svg" class="m-r-small rojo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,17 +288,14 @@ Si queréis yo me encargo de esta parte que la conozco y es un poco más jodida-
 </div>
 
 <div class="paginacion">
-    <div class="botones-pag">
-        <img src="../../../assets/icons/chevron-left.svg" alt="">
-        <button class="pag">1</button>
-        <button class="pag">2</button>
-        <button class="pag">3</button>
-        <button class="pag">4</button>
-        <button class="pag">5</button>
-        <button class="pag">6</button>
-        <img src="../../../assets/icons/chevron-right.svg" alt="">
-        
-    </div>
-</div>
+    <a href="#">&laquo;</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
 
 

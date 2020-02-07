@@ -3,7 +3,7 @@ nav {
     background: white;
     padding: 1.5em 0 1.5em 0;
     margin: 0 auto;
-    height: 130px;
+    height: 120px;
     width: 100vw;
 
     .contenedor-nav {
@@ -160,7 +160,7 @@ hr {
                     position: absolute;
                     background-color: #f6f6f6;
                     min-width: 250px;
-                    top: 175px;
+                    top: 165px;
                     height: auto;
                     padding: 1em 0.5em 1em 1em;
                     z-index: 100;
@@ -184,3 +184,115 @@ hr {
         }
     }
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 30px 20px 100px 1px #818181;
+
+    h3 {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .cont-side-prod-carrito {
+        
+        width: 90%;
+        margin: 2em auto;
+
+        .producto-carrito {
+            width: 100%;
+            @include flex-row(space-between, flex-start);
+            margin-bottom: 2em;
+    
+            .imag-datos {
+                width: 100%;
+                height: 100px;
+                @include flex-row(space-between, flex-start);
+    
+                img {
+                    max-width: 100%;
+                    display: block;
+                    object-fit: contain;
+                    height: 100px;
+    
+                }
+                .datos-prod {
+                @include flex-column(space-between, flex-start);
+    
+                    h4, p, select {
+                        margin-bottom: 0.5em;
+                    }
+                    select {
+                        width: 50%;
+                    }
+                }
+                .precio-quitar {
+                    @include flex-column(space-between,center);
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .total {
+        width: 70%;
+        background-color: rgb(245, 245, 245);
+        margin: 2em auto;
+
+        .subtotal {
+            padding: 1em;
+            @include flex-row(space-between,center);
+        }
+        hr {
+            width: 90%;
+            height: 0.5px;
+            margin: 0 auto;
+        }
+
+        button {
+            margin: 1em;
+            width: 90%;
+        }
+    }
+}
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: background-color .5s;
+    z-index: 10;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

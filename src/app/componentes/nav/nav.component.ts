@@ -87,4 +87,23 @@ export class NavComponent implements OnInit {
     this.searchRef.nativeElement.classList.add('open');
   } */
 
+  openSideCarrito() {
+    document.getElementById("mySidenav").style.width = "400px";
+/*     document.getElementById("main").style.marginRight = "250px";   
+ */  }
+  
+  closeSideCarrito() {
+    document.getElementById("mySidenav").style.width = "0";
+/*     document.getElementById("main").style.marginRight = "0";
+ */  }
+  openSidePerfil() {
+    document.getElementById("mySidePerfil").style.width = "400px";
+/*     document.getElementById("main").style.marginRight = "250px";   
+ */  }
+  
+  closeSidePerfil() {
+    document.getElementById("mySidePerfil").style.width = "0";
+/*     document.getElementById("main").style.marginRight = "0";
+ */  }
+
 }

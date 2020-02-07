@@ -66,6 +66,7 @@ Pero bueno, los tenemos aqui para utilizarlos si los necesitamos*/
 
 .col-100 {
     width: 100%;
+    max-width: 70em;
     padding: 0.5em;
     @include flex-row(flex-start, center);
     position: relative;
